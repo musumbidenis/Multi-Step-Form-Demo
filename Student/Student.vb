@@ -3,43 +3,39 @@
         Application.Exit()
     End Sub
 
-    Private Sub login_Click(sender As Object, e As EventArgs) Handles login.Click
-
+    Private Sub btnNext_Click(sender As Object, e As EventArgs) Handles btnNext.Click
+        BunifuPages1.SetPage(profile)
+        c1.Checked = True
+        s1.ForeColor = Color.Indigo
+        l1.ForeColor = Color.Indigo
     End Sub
 
-    Private Sub BunifuPages1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles BunifuPages1.SelectedIndexChanged
-
+    Private Sub btnPrev_Click(sender As Object, e As EventArgs) Handles btnPrev.Click
+        BunifuPages1.SetPage(login)
     End Sub
 
-    Private Sub academic_Click(sender As Object, e As EventArgs) Handles academic.Click
-
+    Private Sub btnNext2_Click(sender As Object, e As EventArgs) Handles btnNext2.Click
+        BunifuPages1.SetPage(academic)
+        c2.Checked = True
+        s2.ForeColor = Color.Indigo
+        l2.ForeColor = Color.Indigo
     End Sub
 
-    Private Sub BunifuCustomLabel16_Click(sender As Object, e As EventArgs) Handles BunifuCustomLabel16.Click
-
+    Private Sub btnPrev2_Click(sender As Object, e As EventArgs) Handles btnPrev2.Click
+        BunifuPages1.SetPage(profile)
     End Sub
 
-    Private Sub BunifuTextBox12_TextChange(sender As Object, e As EventArgs) Handles BunifuTextBox12.TextChange
+    Private Sub btnNext3_Click(sender As Object, e As EventArgs) Handles btnNext3.Click
+        BunifuPages1.SetPage(finish)
+        c3.Checked = True
+        s3.ForeColor = Color.Indigo
+        l3.ForeColor = Color.Indigo
 
+        c4.Checked = True
+        l4.ForeColor = Color.Indigo
     End Sub
 
-    Private Sub BunifuCustomLabel15_Click(sender As Object, e As EventArgs) Handles BunifuCustomLabel15.Click
-
-    End Sub
-
-    Private Sub BunifuTextBox11_TextChange(sender As Object, e As EventArgs) Handles BunifuTextBox11.TextChange
-
-    End Sub
-
-    Private Sub BunifuCustomLabel14_Click(sender As Object, e As EventArgs) Handles BunifuCustomLabel14.Click
-
-    End Sub
-
-    Private Sub BunifuTextBox10_TextChange(sender As Object, e As EventArgs) Handles BunifuTextBox10.TextChange
-
-    End Sub
-
-    Private Sub BunifuCustomLabel13_Click(sender As Object, e As EventArgs) Handles BunifuCustomLabel13.Click
-
+    Private Sub btnClose2_Click(sender As Object, e As EventArgs) Handles btnClose2.Click
+        Application.Exit()
     End Sub
 End Class
